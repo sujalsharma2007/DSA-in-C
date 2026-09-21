@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int arr[100],n,i,value,pos;
+    printf("Enter the number of elements:",n);
+    scanf("%d",&n);
+    //Array input
+    printf("Enter %d elements:",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    //Array Traversal
+    printf("\nArray After Traversal:");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
