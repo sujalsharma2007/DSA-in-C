@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int A[10][10];
+    int row,col;
+    printf("Enter number of row:");
+    scanf("%d",&row);
+    printf("Enter number of column:");
+    scanf("%d",&col);
+    printf("Enter number of elements:\n");
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            scanf("%d",&A[i][j]);
+        }
+    }
+    printf("After Transpose:\n");
+    for(int i=0;i<col;i++){
+        for(int j=0;j<row;j++){
+            printf("%d ",A[j][i]);
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
